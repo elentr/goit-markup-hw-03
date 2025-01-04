@@ -60,6 +60,10 @@ p {
     padding: 0 15px;
 }
 
+.sect {
+    padding: 120px 0;
+}
+
 /*   HEADER   STYLES   */
 .header-placement {
     display: flex;
@@ -206,9 +210,10 @@ p {
     letter-spacing: 0.02em
 }
 
-.team-title {
-    line-height: 1.11;
-    text-transform: capitalize;
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .card {
@@ -220,8 +225,13 @@ p {
     margin: 0 auto;
 }
 
+.card-content {
+    margin: 32px 16px;
+}
+
 .card-name {
     text-align: center;
+    padding-bottom: 8px;
 }
 
 .card-dscr {
@@ -229,18 +239,31 @@ p {
     line-height: 1.5;
 }
 
-/*   PORTFOLIO   */
+.team-title,
 .portfolio-title {
     line-height: 1.11;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.portfolio-card-title {}
+/*   PORTFOLIO   */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-wrap{
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 32px 16px;
+}
+
+.portfolio-card-title {
+    padding-bottom: 8px;
+}
 
 .portfolio-card-cont {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
     width: 360px;
 }
 
@@ -252,6 +275,7 @@ p {
 /*   FOOTER   */
 .end-section {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo-footer {
@@ -268,5 +292,7 @@ p {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /*width: 400px;*/
+    width: 400px;
+    padding-top: 16px;
+    width: 264px;
 }

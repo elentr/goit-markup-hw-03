@@ -97,14 +97,18 @@ p {
     color: #2e2f42;
 }
 
-.navigation{
+.header-list {
+    display: flex;
+}
+
+.navigation{    
     display: flex;
     align-items: center;
 }
 
 .menu-nav {
-    margin-bottom: 20px;
     display: inline;
+    padding: 24px 0;
 }
 .menu-nav:not(:last-child) {
     margin-right: 40px;
@@ -167,7 +171,11 @@ p {
     cursor: pointer;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em
+    letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
 }
 
 .main-page-btn:hover,
@@ -176,7 +184,7 @@ p {
 }
 
 /*   OPPORTUNITIES   */
-.hidden-title {
+.visually-hidden {
     display: none
 }
 
@@ -193,7 +201,7 @@ p {
 
 .feature-title {
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .feature-dscr {
@@ -218,6 +226,7 @@ p {
 
 .card {
     background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
     /*width: 264px;*/
 }
 
@@ -286,6 +295,7 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    margin-bottom: 16px;
 }
 
 .footer-text {

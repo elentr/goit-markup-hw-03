@@ -186,7 +186,17 @@ p {
 
 /*   OPPORTUNITIES   */
 .visually-hidden {
-    display: none
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-list{
@@ -289,8 +299,12 @@ p {
     padding: 100px 0;
 }
 
-.logo-footer {
+.logo-end {
     display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -298,7 +312,6 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-    margin-bottom: 16px;
 }
 
 .footer-text {
